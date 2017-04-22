@@ -1,28 +1,43 @@
+
 <meta charset="UTF-8">
 <title>Base Web App</title>
 
 
 <!-- First we import our css files -->
-
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-
 <!-- font awesome css -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-
 <!-- this app's own css -->
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css"/>
 
 
-
 <!-- Next import js files -->
-
-<!-- first we import jquery -->
+<!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 <!-- then bootstrap -->
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+
+<!-- Now everything we'll need to use firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+
+<script type="text/javascript">
+  var apiKey = '<%= process.env.API_KEY %>';
+  //replace this with the config in the code snippet provided from Firebase.
+  var config = {
+    apiKey: "AIzaSyACpQp1QKU1Pb0TWnLMuQh7uwJIGs4yO3U",
+    authDomain: "myproject-e0b13.firebaseapp.com",
+    databaseURL: "https://myproject-e0b13.firebaseio.com",
+    projectId: "myproject-e0b13",
+    storageBucket: "myproject-e0b13.appspot.com",
+    messagingSenderId: "45892308445"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <!-- then our app's own js file -->
 <script src="/js/main.js"></script>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
